@@ -3,58 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Missing Trophy - Play</title>
     <script src="script.js" defer></script>
-
+    <style>
+        #scene-text, #message-display { white-space: pre-line; }
+        #choices-container button { display: block; margin: 8px 0; }
+    </style>
 </head>
 <body>
     <header>
-      <nav>
-            <ul> 
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul> 
                 <li><a href="about.html">About the creator</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-    <header>
-        <h1 id="scene-title">  </h1>
-        <h2 id="character-name">  </h2>
-    </header>
-    
-    <section>
-    <p id="scene-text">     </p>
+        <h1>The Missing Trophy</h1>
+        <img src="https://oaklandtech.com/images/oakland-technical-high-school.png" alt="A school building" width="180">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Simple_gold_cup.svg" alt="A gold trophy" width="90" height="90">
+        <p>Read each scene and choose an action. Search the school, question people, and return the missing trophy before you leave.</p>
 
-    </section>
+        <section aria-labelledby="scene-title">
+            <h2 id="scene-title"></h2>
+            <h3 id="character-name"></h3>
+            <p id="scene-text"></p>
+            <p id="message-display" role="status" aria-live="polite"></p>
+            <div id="choices-container"></div>
+        </section>
 
-    <section>
-        <div id="choices-container"> </div>
-    </section>   
-        
-    <section>
-        <p> Current HP:</p>
-        <ul>
-            <li id="health-display"> 100</li>
-        </ul>
+        <section aria-labelledby="progress-title">
+            <h2 id="progress-title">Your investigation</h2>
+            <p>Clues found: <span id="clue-count"></span></p>
+            <p>Inventory: <span id="inventory-display"></span></p>
+        </section>
 
-        <p> Inventory:</p>
-        <ul>
-            <li id="inventory-display"> </li>
-        </ul>
-
-        <p id="message-display"></p>
-    </section>
-
-
+        <p><a href="game.html">Restart the game</a></p>
+        <noscript><p>Turn on JavaScript in your browser to play the game.</p></noscript>
     </main>
-    <footer>
 
-    </footer>
 </body>
 </html>
