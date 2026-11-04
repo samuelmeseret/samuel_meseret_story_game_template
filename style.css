@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #30382f;
+    background-color: #f7f5ed;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #e4e9de;
+    padding: 12px 16px;
+}
+
+nav ul {
+    list-style: none;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(45, 74, 58);
+}
+
+main {
+    max-width: 740px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.heading {
+    color: #795d24;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #bbc5b6;
+    background-color: white;
+    text-align: left;
+    margin: 24px 0;
+}
+
+#clue-count {
+    color: #2d4a3a;
+    background-color: #e4e9de;
+    font-weight: bold;
+    padding: 4px;
+}
+
+h2, h3 {
+    color: #2d4a3a;
+    font-weight: 700;
+}
+
+p {
+    word-spacing: 1px;
+}
+
+section {
+    margin: 24px 0;
+}
+
+fieldset {
+    border: 1px solid #bbc5b6;
+    padding: 12px;
+    min-width: 0;
+}
+
+img, video {
+    border-radius: 6px; /* 10. Rounded image corners */
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 8px 8px 8px 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+form p label {
+    display: block;
+}
+
+input[type="text"], input[type="number"], select, button {
+    box-sizing: border-box;
+    max-width: 100%;
+    font: inherit;
+    border: 1px solid #bbc5b6;
+    padding: 8px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 8px 0;
+    background-color: #2d4a3a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #20362a;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+    outline: 2px solid #795d24;
+    outline-offset: 2px;
+}
+
+#scene-text, #message-display {
+    white-space: pre-line;
+}
+
+
+.left-pupil {
+    position: fixed;
+  top: 0;
+  left: 0;
+    
+  }
+  
