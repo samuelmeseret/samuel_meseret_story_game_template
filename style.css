@@ -7,31 +7,12 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #e4e9de;
-    padding: 12px 16px;
-}
-
-nav ul {
-    list-style: none;
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+.navbar {
+    background-color: #2d4a3a;
 }
 
 a {
     color: rgb(45, 74, 58);
-}
-
-main {
-    max-width: 740px;
-    margin: 24px auto;
-    padding: 0 16px;
 }
 
 .heading {
@@ -42,18 +23,7 @@ main {
 }
 
 .card {
-    padding: 16px;
-    border: 1px solid #bbc5b6;
-    background-color: white;
-    text-align: left;
-    margin: 24px 0;
-}
-
-#clue-count {
-    color: #2d4a3a;
-    background-color: #e4e9de;
-    font-weight: bold;
-    padding: 4px;
+    border-color: #bbc5b6;
 }
 
 h2, h3 {
@@ -63,16 +33,6 @@ h2, h3 {
 
 p {
     word-spacing: 1px;
-}
-
-section {
-    margin: 24px 0;
-}
-
-fieldset {
-    border: 1px solid #bbc5b6;
-    padding: 12px;
-    min-width: 0;
 }
 
 img, video {
@@ -87,34 +47,6 @@ blockquote {
     font-style: italic;
 }
 
-form p label {
-    display: block;
-}
-
-input[type="text"], input[type="number"], select, button {
-    box-sizing: border-box;
-    max-width: 100%;
-    font: inherit;
-    border: 1px solid #bbc5b6;
-    padding: 8px;
-}
-
-input[type="text"], input[type="number"], select {
-    width: 100%;
-}
-
-button {
-    display: block;
-    margin: 8px 0;
-    background-color: #2d4a3a;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #20362a;
-}
-
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
     outline: 2px solid #795d24;
     outline-offset: 2px;
@@ -122,6 +54,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 #scene-text, #message-display {
     white-space: pre-line;
+}
+
+#message-display:empty {
+    display: none;
 }
 
 

@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Missing Trophy - Play</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About the creator</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Missing Trophy - Play</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md" data-bs-theme="dark" aria-label="Main navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">The Missing Trophy</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="game.html">Game</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="heading">The Missing Trophy</h1>
-        <img src="https://oaklandtech.com/images/oakland-technical-high-school.png" alt="A school building" width="180">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Simple_gold_cup.svg" alt="A gold trophy" width="90" height="90">
-        <p>Read each scene and choose an action. Search the school, question people, and return the missing trophy before you leave.</p>
+        <main class="container py-4">
+            <h1 class="heading">The Missing Trophy</h1>
+            <img src="https://oaklandtech.com/images/oakland-technical-high-school.png" alt="A school building" width="180">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Simple_gold_cup.svg" alt="A gold trophy" width="90" height="90">
+            <p class="mb-4">Read each scene and choose an action. Search the school, question people, and return the missing trophy before you leave.</p>
 
-        <div class="card" aria-labelledby="scene-title">
-            <h2 id="scene-title"></h2>
-            <h3 id="character-name"></h3>
-            <p id="scene-text"></p>
-            <p id="message-display" role="status" aria-live="polite"></p>
-            <div id="choices-container"></div>
-        </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm" aria-labelledby="scene-title">
+                        <div class="card-body p-4">
+                            <h2 class="h3" id="scene-title"></h2>
+                            <h3 class="h5" id="character-name"></h3>
+                            <p id="scene-text"></p>
+                            <p class="alert alert-success" id="message-display" role="status" aria-live="polite"></p>
+                            <div class="d-grid gap-2" id="choices-container"></div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card" aria-labelledby="progress-title">
-            <h2 id="progress-title">Your investigation</h2>
-            <p>Clues found: <span id="clue-count"></span></p>
-            <p>Inventory: <span id="inventory-display"></span></p>
-        </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm" aria-labelledby="progress-title">
+                        <div class="card-body p-4">
+                            <h2 class="h4" id="progress-title">Your investigation</h2>
+                            <p>Clues found: <span class="badge text-bg-success" id="clue-count"></span></p>
+                            <p class="mb-0">Inventory: <span id="inventory-display"></span></p>
+                        </div>
+                    </div>
+                    <p class="mt-3"><a class="btn btn-outline-success" href="game.html">Restart the game</a></p>
+                </div>
+            </div>
 
-        <p><a href="game.html">Restart the game</a></p>
-        <noscript><p>Turn on JavaScript in your browser to play the game.</p></noscript>
-    </main>
+            <noscript><p class="alert alert-warning mt-3">Turn on JavaScript in your browser to play the game.</p></noscript>
+        </main>
 
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

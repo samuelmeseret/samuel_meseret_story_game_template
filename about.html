@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Danny Ma (The zombie)</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Danny Ma (The zombie)</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md" data-bs-theme="dark" aria-label="Main navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">The Missing Trophy</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="game.html">Game</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="heading">About Me</h1>
-        <h2>Hi, I'm Danny Ma (The zombie)!</h2>
-        <p><strong>Student and beginner game creator</strong></p>
-        <p><em>The best zombie to ever do it</em></p>
+        <main class="container py-4">
+            <h1 class="heading mb-4">About Me</h1>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <section class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="h4">Hi, I'm Danny Ma (The zombie)!</h2>
+                            <p><strong>Student and beginner game creator</strong></p>
+                            <p><em>The best zombie to ever do it</em></p>
 
-        <video autoplay loop muted playsinline width="120" height="120">
-            <source src="https://i.makeagif.com/media/9-29-2026/yC5vvU.mp4" type="video/mp4">
-            browser doesn't support videos
-          </video>       
+                            <video autoplay loop muted playsinline width="120" height="120">
+                                <source src="https://i.makeagif.com/media/9-29-2026/yC5vvU.mp4" type="video/mp4">
+                                browser doesn't support videos
+                            </video>
+                        </div>
+                    </section>
+                </div>
 
-        <section>
-            <h2>My background</h2>
-            <p>I'm a high school student who likes mystery stories, drawing, and making small games. I always try to guess the ending of a book before I finish it. My cat, Noodle, usually sits on my keyboard while I work.</p>
-            <p>I came up with <strong>The Missing Trophy</strong> because an empty school can feel a little creepy. I wanted a mystery where paying attention and listening to people matter.</p>
-        </section>
+                <div class="col-md-8">
+                    <section class="mb-4">
+                        <h2 class="h4">My background</h2>
+                        <p>I'm a high school student who likes mystery stories, drawing, and making small games. I always try to guess the ending of a book before I finish it. My cat, Noodle, usually sits on my keyboard while I work.</p>
+                        <p>I came up with <strong>The Missing Trophy</strong> because an empty school can feel a little creepy. I wanted a mystery where paying attention and listening to people matter.</p>
+                    </section>
 
-        <section>
-            <h2>My favorites</h2>
-            <ol>
-                <li>
-                    Hobbies
-                    <ul>
-                        <li>Reading detective stories</li>
-                        <li>Sketching game characters</li>
-                        <li>Playing basketball after school</li>
-                    </ul>
-                </li>
-                <li>
-                    Snacks
-                    <ul>
-                        <li>Popcorn</li>
-                        <li>Chocolate chip cookies</li>
-                    </ul>
-                </li>
-                <li>My cat, Noodle</li>
-            </ol>
-        </section>
+                    <section class="mb-4">
+                        <h2 class="h4">My favorites</h2>
+                        <ol>
+                            <li>
+                                Hobbies
+                                <ul>
+                                    <li>Reading detective stories</li>
+                                    <li>Sketching game characters</li>
+                                    <li>Playing basketball after school</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Snacks
+                                <ul>
+                                    <li>Popcorn</li>
+                                    <li>Chocolate chip cookies</li>
+                                </ul>
+                            </li>
+                            <li>My cat, Noodle</li>
+                        </ol>
+                    </section>
 
-        <section>
-            <h2>My goals</h2>
-            <p>I want to learn more HTML and make a longer mystery game with different endings. </p>
-            <!-- <p>My next mystery might take place in a museum.</p> -->
-            <p><a href="index.html">Back to The Missing Trophy</a></p>
-        </section>
-    </main>
-</body>
+                    <section class="border-top pt-3">
+                        <h2 class="h4">My goals</h2>
+                        <p>I want to learn more HTML and make a longer mystery game with different endings. </p>
+                        <!-- <p>My next mystery might take place in a museum.</p> -->
+                        <p><a class="btn btn-outline-success" href="index.html">Back to The Missing Trophy</a></p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

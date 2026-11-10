@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Missing Trophy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="game.html">Play the game</a></li>
-                <li><a href="about.html">About the creator</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Missing Trophy</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md" data-bs-theme="dark" aria-label="Main navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">The Missing Trophy</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="game.html">Game</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <main >
-        <h1 class="heading">The Missing Trophy</h1>
-        <h2>Can you find it before tomorrow's assembly?</h2>
+        <main class="container py-4">
+            <h1 class="heading">The Missing Trophy</h1>
+            <p class="lead mb-4">Can you find it before tomorrow's assembly?</p>
 
-        <section>
-            <h2>A quiet school. An empty trophy case.</h2>
-            <img src="https://media.istockphoto.com/id/627891468/vector/gold-cup-isolated.jpg?s=612x612&w=0&k=20&c=ps9Vgnxrluwp_6EtQOvfZoa8sZ4uKDOLHTdWiFXEI2A=" alt="A gold trophy" width="120" height="120">
-            <img src="https://oaklandtech.com/images/oakland-technical-high-school.png" alt="A school building" width="120" height="120">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <section class="mb-4">
+                        <h2 class="h4">A quiet school. An empty trophy case.</h2>
+                        <img src="https://media.istockphoto.com/id/627891468/vector/gold-cup-isolated.jpg?s=612x612&w=0&k=20&c=ps9Vgnxrluwp_6EtQOvfZoa8sZ4uKDOLHTdWiFXEI2A=" alt="A gold trophy" width="120" height="120">
+                        <img src="https://oaklandtech.com/images/oakland-technical-high-school.png" alt="A school building" width="120" height="120">
 
-            <p>The school day is over, and you are about to head home. The hallways are quiet. Mr. Lee is standing beside the trophy case, staring at an <strong>empty space</strong>.</p>
-            <blockquote>"Do you know where the trophy is? It was here during the lunch break."</blockquote>
-            <p>The trophy is needed for tomorrow morning's assembly. Posters on the wall announce that Mia is receiving an award, but the award itself is missing.</p>
-            <p>The glass is intact, and the other awards are still there. Somewhere in the school, there must be a clue. <em>Every footstep echoes in the empty hallway.</em></p>
-        </section>
+                        <p>The school day is over, and you are about to head home. The hallways are quiet. Mr. Lee is standing beside the trophy case, staring at an <strong>empty space</strong>.</p>
+                        <blockquote class="border-start border-success border-3 ps-3">"Do you know where the trophy is? It was here during the lunch break."</blockquote>
+                        <p>The trophy is needed for tomorrow morning's assembly. Posters on the wall announce that Mia is receiving an award, but the award itself is missing.</p>
+                        <p>The glass is intact, and the other awards are still there. Somewhere in the school, there must be a clue. <em>Every footstep echoes in the empty hallway.</em></p>
+                    </section>
 
-        <section>
-            <h2>Your task</h2>
-            <ol>
-                <li>Search the hallway, classroom, library, and gym.</li>
-                <li>Talk to Mr. Lee and Mia, and look for clues before jumping to conclusions.</li>
-                <li>Find the trophy and return it to the case before you leave.</li>
-            </ol>
-            <p>You can give up and go home, but then the mystery will remain unsolved.</p>
-        </section>
+                    <section class="border-top pt-3">
+                        <h2 class="h4">Your task</h2>
+                        <ol>
+                            <li>Search the hallway, classroom, library, and gym.</li>
+                            <li>Talk to Mr. Lee and Mia, and look for clues before jumping to conclusions.</li>
+                            <li>Find the trophy and return it to the case before you leave.</li>
+                        </ol>
+                        <p>You can give up and go home, but then the mystery will remain unsolved.</p>
+                    </section>
+                </div>
 
-        <section>
-            <h2>Before you begin</h2>
-            <p>Fill out this short investigator survey, then start the game.</p>
-            <!-- The final bell has just rung. -->
-            <form action="game.html" method="get">
-                <p>
-                    <label for="player-name">What is your name?</label>
-                    <input type="text" id="player-name" name="player_name" placeholder="Enter your name" required>
-                </p>
+                <div class="col-lg-5">
+                    <section class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="h4">Before you begin</h2>
+                            <p>Fill out this short investigator survey, then start the game.</p>
+                            <!-- The final bell has just rung. -->
+                            <form action="game.html" method="get">
+                                <div class="mb-3">
+                                    <label class="form-label" for="player-name">What is your name?</label>
+                                    <input class="form-control" type="text" id="player-name" name="player_name" placeholder="Enter your name" autocomplete="given-name" required>
+                                </div>
 
-                <p>
-                    <label for="approach">How do you like to solve mysteries?</label>
-                    <select id="approach" name="approach">
-                        <option value="observe">Look closely for clues</option>
-                        <option value="question">Ask people questions</option>
-                        <option value="explore">Explore every room</option>
-                    </select>
-                </p>
+                                <div class="mb-3">
+                                    <label class="form-label" for="approach">How do you like to solve mysteries?</label>
+                                    <select class="form-select" id="approach" name="approach">
+                                        <option value="observe">Look closely for clues</option>
+                                        <option value="question">Ask people questions</option>
+                                        <option value="explore">Explore every room</option>
+                                    </select>
+                                </div>
 
-                <fieldset>
-                    <legend>Where would you look first?</legend>
-                    <input type="radio" id="hallway" name="first_place" value="hallway" required>
-                    <label for="hallway">The hallway</label>
-                    <br>
-                    <input type="radio" id="classroom" name="first_place" value="classroom">
-                    <label for="classroom">The classroom</label>
-                    <br>
-                    <input type="radio" id="gym" name="first_place" value="gym">
-                    <label for="gym">The gym</label>
-                </fieldset>
+                                <fieldset class="mb-3">
+                                    <legend class="fs-6">Where would you look first?</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="hallway" name="first_place" value="hallway" required>
+                                        <label class="form-check-label" for="hallway">The hallway</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="classroom" name="first_place" value="classroom">
+                                        <label class="form-check-label" for="classroom">The classroom</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="gym" name="first_place" value="gym">
+                                        <label class="form-check-label" for="gym">The gym</label>
+                                    </div>
+                                </fieldset>
 
-                <p>
-                    <label for="minutes">How many minutes can you stay after school?</label>
-                    <input type="number" id="minutes" name="minutes" min="1" max="60" placeholder="15" required>
-                </p>
+                                <div class="mb-3">
+                                    <label class="form-label" for="minutes">How many minutes can you stay after school?</label>
+                                    <input class="form-control" type="number" id="minutes" name="minutes" min="1" max="60" placeholder="15" aria-describedby="minutes-help" required>
+                                    <div class="form-text" id="minutes-help">Choose between 1 and 60 minutes.</div>
+                                </div>
 
-                <button type="submit">Start the game</button>
-            </form>
-        </section>
-    </main>
+                                <button class="btn btn-success w-100" type="submit">Start the game</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
 
-    
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

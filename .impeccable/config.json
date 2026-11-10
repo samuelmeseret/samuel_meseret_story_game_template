@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-11-10T04:17:04.168Z",
+        "reason": "Agent decision: Arial is the existing project font; preserving it keeps this Bootstrap assignment simple, as requested by the user. The task does not call for a typography redesign."
+      }
+    ]
+  }
+}
